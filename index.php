@@ -11,7 +11,7 @@ define('BASE_URL', getenv('TODOLIST_BASE_URL') ?: '/');
 define('DB_USER', getenv('TODOLIST_DB_USER'));
 define('DB_PASS', getenv('TODOLIST_DB_PASS'));
 define('DB_NAME', getenv('TODOLIST_DB_NAME'));
-define('DB_HOSt', getenv('TODOLIST_DB_HOST'));
+define('DB_HOST', getenv('TODOLIST_DB_HOST'));
 define('DB_PORT', getenv('TODOLIST_DB_PORT'));
 
 $db = new PDO('mysql:host='.DB_HOST.';port='.DB_PORT.';dbname='.DB_NAME, DB_USER, DB_PASS);
